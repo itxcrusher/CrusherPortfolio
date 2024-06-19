@@ -1,0 +1,599 @@
+/*General*/
+.tooltip-container{
+  transition: all 0.3s ease-in-out;
+}
+.tooltip{
+  visibility: hidden;
+  z-index: 1;
+  opacity: .40;
+  background: var(--skin-color);
+  transition: all 0.3s ease-in-out;
+  padding: 1vh;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+.tooltip::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 12.5px 0 12.5px;
+  border-color: var(--skin-color) transparent transparent transparent;
+  position: absolute;
+}
+.tooltip-container:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s linear;
+  animation: 1s ease-in-out infinite  alternate;
+}
+
+/*Specific*/
+
+/*Cursor Tracker Tooltip*/
+#cursor-tracker .cursor-tracker-tooltip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 0.5vw);
+  height: calc(20px + 1vw);
+}
+#cursor-tracker .cursor-tracker-tooltip::after{
+  right: calc(40% + 1.5vw);
+  transform: rotate(90deg);
+}
+#cursor-tracker:hover .cursor-tracker-tooltip{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3 linear;
+  animation: toolTipX 1s ease-in-out infinite alternate;
+  width: calc(52.5px + 2vw);
+}
+#cursor-tracker:hover .cursor-tracker-tooltip::after{
+  right: calc(95% + 0.3vw);
+}
+
+/*Navigation Menu Tooltip*/
+.header .ham-container{
+  position: absolute;
+  right: 1.1vw;
+}
+.header .ham-container .ham-tooltip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(7px + 0.5vw);
+  width: calc(40px + 7vw);
+  height: calc(30px + 0.5vw);
+  position: absolute;
+  right: calc(50px + 2vw);
+  top: calc(20px - 1vw);
+}
+.header .ham-container .ham-tooltip::after{
+  right: calc(-23px);
+  transform: rotate(-90deg);
+  box-shadow: var(--outer-shadow-0);
+}
+.header .ham-container:hover .ham-tooltip{
+  transform: translateX(-5px);
+  animation-name: toolTipX;
+}
+
+/*My team Tooltip*/
+.nav-menu .team-container .team-tooltip{
+  position: absolute;
+  left: 37%;
+  top: 57.7%;
+}
+.nav-menu .team-container .team-tooltip::after{
+  top: 33%;
+  left: 99%;
+  transform: rotate(-90deg);
+  box-shadow: var(--outer-shadow-0);
+}
+.nav-menu .team-container:hover .team-tooltip{
+  transform: translateX(-5px);
+  animation-name: toolTipX;
+}
+
+/*Copyright tooltip*/
+.nav-menu .copyright-container{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 500px;
+}
+.nav-menu .copyright-container:hover{
+  transform: translateX(-6px);
+}
+.nav-menu .copyright-container .copyright-tooltip{
+  position: inherit;
+  left: 70px;
+  transform: translateX(9px);
+}
+.nav-menu .copyright-container .copyright-tooltip::after{
+  top: 30%;
+  left: -18%;
+  transform: rotate(90deg);
+}
+.nav-menu .copyright-container:hover .copyright-tooltip{
+  transform: translateX(-5px);
+  animation-name: toolTipX;
+}
+
+/*Tooltip activator Tooltip*/
+.activator-container{
+  position: fixed;
+  right: 5%;
+  bottom: calc(20px + 2vw);
+  z-index: 3;
+}
+.activator-container:hover{
+  transform: translateX(-6px) translateY(-6px) translateZ(-6px);
+}
+.activator-container .activator-tooltips{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: inherit;
+  font-size: calc(7px + 0.5vw);
+  width: calc(45px + 6vw);
+  height: calc(30px + 1vw);
+  top: 3px;
+  left: -12vw;
+}
+.activator-container .activator-tooltips::after{
+  top: 30%;
+  right: calc(-45% + 2.5vw);
+  transform: rotate(-90deg);
+}
+.activator-container:hover .activator-tooltips{
+  animation-name: toolTipX;
+}
+
+/*Fixed tooltips*/
+.fixed-tooltips{
+  position: fixed;
+  top: 9.5%;
+  right: 6%;
+  display: grid;
+  justify-content: center;
+  font-size: calc(7px + 0.5vw);
+  width: calc(80px + 4vw);
+  height: calc(100px + 1vw);
+}
+.ft-hide{
+  display: none;
+}
+@media screen and (max-width: 1000px){
+  .fixed-tooltips{
+    right: 8%;
+  }
+}
+@media screen and (max-width: 900px){
+  .fixed-tooltips{
+    right: 9%;
+  }
+}
+@media screen and (max-width: 800px){
+  .fixed-tooltips{
+    right: 10%;
+  }
+}
+@media screen and (max-width: 700px){
+  .fixed-tooltips{
+    right: 12%;
+  }
+}
+@media screen and (max-width: 600px){
+  .fixed-tooltips{
+    right: 14%;
+  }
+}
+@media screen and (max-width: 500px){
+  .fixed-tooltips{
+    right: 16%;
+  }
+}
+@media screen and (max-width: 400px){
+  .fixed-tooltips{
+    right: 20%;
+  }
+}
+@media screen and (max-width: 300px){
+  .fixed-tooltips{
+    right: 22%;
+  }
+}
+
+.fixed-tooltips .style-tooltip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  /*width: calc(70px + 3vw);*/
+  height: calc(20px + 1vw);
+  margin: auto;
+  transition: 0.3s linear;
+  animation: toolTipX 1s ease-in-out infinite  alternate;
+}
+.fixed-tooltips .style-tooltip::after{
+  right: calc(-35% + 0.8vw);
+  transform: rotate(-90deg);
+}
+.fixed-tooltips .mode-tooltip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  width: calc(80px + 4vw);
+  height: calc(20px + 1vw);
+  margin: auto;
+  transition: 0.3s linear;
+  animation: toolTipX 1s ease-in-out infinite  alternate;
+}
+.fixed-tooltips .mode-tooltip::after{
+  right: calc(-30% + 1vw);
+  transform: rotate(-90deg);
+}
+
+/*animation*/
+@keyframes toolTipX {
+  0%{
+    transform: translateX(6px); 
+  }
+  100%{
+    transform: translateX(1px); 
+  }
+}
+@keyframes toolTipY {
+  0%{
+    transform: translateY(6px); 
+  }
+  100%{
+    transform: translateY(1px); 
+  }
+}
+
+/*Hide Tooltips*/
+.tc-hide{
+  transform: none !important;
+}
+.tt-hide{
+  visibility: hidden !important;
+}
+
+/*Tooltip Activator*/
+.tooltip-wrapper {
+  --background: var(--skin-color);
+  --icon-color: #414856;
+  --shape-color-01: #B8CBEE;
+  --shape-color-02: #7691E8;
+  --shape-color-03: #FDD053;
+  --width: calc(30px + 1vw);
+  --height: calc(30px + 1vw);
+  --border-radius: var(--height);
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip-wrapper .tooltip-btn {
+  background: seagreen;
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  z-index: 3;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: plus-animation-reverse 0.5s ease-out forwards;
+          animation: plus-animation-reverse 0.5s ease-out forwards,
+                    redActivatorGlow 1s ease-in-out infinite alternate;
+}
+.tooltip-wrapper .tooltip-btn-green{
+  background: indianred;
+}
+.tooltip-wrapper .tooltip-btn::before, .tooltip-wrapper .tooltip-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  background: #fff;
+}
+.tooltip-wrapper .tooltip-btn::before {
+  width: 4px;
+  height: 28px;
+}
+.tooltip-wrapper .tooltip-btn::after {
+  width: 28px;
+  height: 4px;
+}
+.tooltip-wrapper .tooltip-activator {
+  width: 100px;
+  height: 50px;
+  font-size: calc(7px + 0.5vw);
+  color: white;
+  border-radius: 70px;
+  position: absolute;
+  background: var(--skin-color);
+  z-index: 2;
+  padding: 0 15px;
+  box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  opacity: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: opacity 0.15s ease-in, top 0.15s ease-in, width 0.15s ease-in;
+}
+.tooltip-wrapper .tooltip-activator > svg:hover .icon {
+  opacity: 1;
+}
+.tooltip-wrapper .tooltip-activator::after {
+  content: "";
+  width: calc(10px + 0.3vw);
+  height: calc(10px + 0.3vw);
+  background: seagreen;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: -8px;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.tooltip-wrapper > svg {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  transform: scale(0);
+}
+.tooltip-wrapper > svg .shape {
+  fill: none;
+  stroke: none;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50% 20%;
+}
+.tooltip-wrapper input {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+}
+.tooltip-wrapper input:checked ~ svg {
+  -webkit-animation: pang-animation 1.2s ease-out forwards;
+          animation: pang-animation 1.2s ease-out forwards;
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(1) {
+  transform: translate(24px, 30%) rotate(40deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(2) {
+  transform: translate(-21px, 30%) rotate(80deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(3) {
+  transform: translate(-8px, 30%) rotate(120deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(4) {
+  transform: translate(12px, 30%) rotate(160deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(5) {
+  transform: translate(-24px, 30%) rotate(200deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(6) {
+  transform: translate(23px, 30%) rotate(240deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(7) {
+  transform: translate(4px, 30%) rotate(280deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(8) {
+  transform: translate(-2px, 30%) rotate(320deg);
+}
+.tooltip-wrapper input:checked ~ svg .shape:nth-of-type(9) {
+  transform: translate(-19px, 30%) rotate(360deg);
+}
+.tooltip-wrapper input:checked ~ .tooltip-btn {
+  -webkit-animation: plus-animation 0.5s ease-out forwards;
+          animation: plus-animation 0.5s ease-out forwards,  
+          greenActivatorGlow 1s ease-in-out infinite alternate;
+}
+.tooltip-wrapper input:checked ~ .tooltip-activator {
+  background-color: seagreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(7px + 0.5vw);
+  width: calc(85px + 3vw);
+  height: calc(20px + 2vw);
+  -webkit-animation: stretch-animation 1s ease-out forwards 0.15s;
+          animation: stretch-animation 1s ease-out forwards 0.15s;
+          animation: fadeOut 2s ease-in-out forwards;
+  top: calc(-30px - 2vw);
+  opacity: 1;
+}
+
+@keyframes greenActivatorGlow{
+  from{
+    box-shadow: 0 0 10px #fff,
+              0 0 20px #fff,
+              0 0 30px seagreen,
+              0 0 40px seagreen,
+              0 0 50px seagreen,
+              0 0 60px seagreen,
+              0 0 70px seagreen;
+  }
+  to{
+    box-shadow: 0 0 20px #fff,
+              0 0 30px seagreen,
+              0 0 40px seagreen,
+              0 0 50px seagreen,
+              0 0 60px seagreen, 
+              0 0 70px seagreen, 
+              0 0 80px seagreen;
+  }
+}
+@keyframes redActivatorGlow{
+  from{
+    box-shadow: 0 0 10px #fff,
+              0 0 20px #fff,
+              0 0 30px indianred,
+              0 0 40px indianred,
+              0 0 50px indianred,
+              0 0 60px indianred,
+              0 0 70px indianred;
+  }
+  to{
+    box-shadow: 0 0 20px #fff,
+              0 0 30px indianred,
+              0 0 40px indianred,
+              0 0 50px indianred,
+              0 0 60px indianred, 
+              0 0 70px indianred, 
+              0 0 80px indianred;
+  }
+}
+
+@-webkit-keyframes pang-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes pang-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes plus-animation {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  20% {
+    transform: rotate(60deg) scale(0.93);
+  }
+  55% {
+    transform: rotate(35deg) scale(0.97);
+  }
+  80% {
+    transform: rotate(48deg) scale(0.94);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.95);
+  }
+}
+@keyframes plus-animation {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  20% {
+    transform: rotate(60deg) scale(0.93);
+  }
+  55% {
+    transform: rotate(35deg) scale(0.97);
+  }
+  80% {
+    transform: rotate(48deg) scale(0.94);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.95);
+  }
+}
+@-webkit-keyframes plus-animation-reverse {
+  0% {
+    transform: rotate(45deg) scale(0.95);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  55% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+@keyframes plus-animation-reverse {
+  0% {
+    transform: rotate(45deg) scale(0.95);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  55% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+@-webkit-keyframes stretch-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes stretch-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

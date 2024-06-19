@@ -1,0 +1,137 @@
+
+/********** Scroll Bar **********/
+.scroll-bar {
+  overflow-y: auto;
+}
+.scroll-bar::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll-bar::-webkit-scrollbar-track {
+  background-color: var(--bg-black-50);
+  border-radius: 100px;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+/************Birds Animation************/
+#projects-vanta-birds,
+#services-vanta-birds,
+#contact-vanta-birds{
+  overflow: hidden;
+}
+#projects-popup-vanta-birds{
+  overflow-x: hidden;
+}
+/***********Contact Section***********/
+/********** Light Popup Modal **********/
+.light-modal-content{
+  background: radial-gradient(#6c5b7b, #c06c84, #355c7d) !important;
+	border: 10px solid #6c5b7b;
+  border-radius: 1% !important;
+	outline: 2px dashed #c06c84;
+	outline-offset: 15px;
+	width: calc(100px + 40vw) !important;
+}
+.light-modal .light-modal-content .popup-light-modal-btn{
+  display: none;
+}
+/*Header Start*/
+.light-modal-header .light-modal-heading{
+	font-size: calc(20px + 1vw) !important;
+  font-weight: 1000;
+  text-align: center;
+}
+/*Body Start*/
+.light-modal-body .website-features h2{
+	text-align: center;
+  font-size: calc(1.5em + 0.5vw);
+  font-weight: 600;
+}
+.light-modal-body .website-features ul {
+  font-size: calc(10px + 0.5vw);
+  list-style: none;
+  margin-left: 2vw;
+}
+.light-modal-body .website-features ul li:before {
+  content: '\2714\0020';
+}
+/*Note Start*/
+.light-modal-body .body-note .popup-note{
+	font-size: calc(1em + 0.7vw);
+  font-weight: 600;
+}
+.light-modal-body .body-note .popup-text{
+  font-size: calc(9px + 0.4vw);
+}
+/*Footer Start*/
+.light-modal-footer{
+	display: flex;
+	justify-content: flex-end;
+}
+.light-modal-footer .light-modal-close-btn{
+  background-color: var(--skin-color) !important;
+}
+
+/*Wavy Hand*/
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: calc(25px + 1vw);
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/********** Contact Form **********/
+/********** Contact Submit Modal **********/
+#submit-modal-content{
+  background: radial-gradient(lightgreen, var(--bg-black-50)) !important;
+  border: 10px solid #6c5b7b;
+  border-radius: 1% !important;
+  outline: 2px dashed #c06c84;
+  outline-offset: 15px;
+  width: calc(100px + 40vw) !important;
+}
+#submit-modal #submit-modal-content #submit-modal-btn{
+  display: none;
+}
+
+/*Header Start*/
+#submit-modal-header{
+}
+#submit-modal-header #submit-modal-heading{
+  font-size: calc(20px + 1vw) !important;
+  font-weight: 1000;
+  margin: auto;
+}
+
+/*Body Start*/
+#submit-modal-body{}
+#submit-modal-body .submit-animation{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+
+/*Footer Start*/
+#submit-modal-footer{
+  display: flex;
+  justify-content: flex-end;
+}
+#submit-modal-footer #submit-modal-close-btn{
+  background-color: var(--skin-color) !important;
+}

@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Crusher's Portfolio</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="img/profile-pic.png" type="image/x-icon">
+
+	<!-- main css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- extra css -->
+	<link rel="stylesheet" type="text/css" href="css/extra.css">
+
+	<!-- Extra-2 CSS -->
+	<link rel="stylesheet" type="text/css" href="css/extra-2.css">
+
+	<!-- Fireworks css -->
+	<link rel="stylesheet" type="text/css" href="css/firework.css">
+
+	<!-- Deep Bubbles CSS -->
+	<link rel="stylesheet" type="text/css" href="css/deep-bubbles.css">
+
+	<!-- Tooltips CSS -->
+	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<!-- default color skin -->
+	<link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+
+	<!-- style switcher -->
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+	<link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+	<link rel="stylesheet" type="text/css" href="css/style-switcher.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Jquery Link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Custom Cursor CDN -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/mouse-min.js"></script>
+
+	<!-- Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="Popup light modal/dist/css/light-modal.min.css">
+
+    <!-- Animation CDN Link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body class="scroll-bar" onmouseover="toggleDisplay()">
+
+	<!-- Preloader Start -->
+	<div class="preloader">
+		<div class="box">
+			<div></div><div></div><div></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Cursor Tracker Animation Start -->
+	<div id="cursor-tracker" class="bubble-container">
+		<label><input onclick="toggleChase()" class="click-bubble" type="checkbox" name="dummy" value="on"></label>
+		<div class="cursor-tracker-tooltip tooltip outer-shadow">
+			<span>Click Me!</span>
+		</div>
+	</div>
+	<!-- Cursor Tracker Animation End -->
+
+	<!-- header start -->
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="logo">
+					<a href="index.html">
+						<article class="logo-card">
+							<div class="logo-circle"></div>
+							<div class="logo-circle"></div>
+							<div class="logo-card-inner" onmouseover="mouseEnterBlur()" onmouseleave="mouseLeaveBlur()">
+								<div class="logo-card-blur"><p>C<span class="logo-card-rush"></span></p></div>
+							</div>
+						</article>
+					</a>
+				</div>
+
+				<!-- Navigation Tooltip -->
+				<div id="tooltip-container" class="ham-container tooltip-container">
+					<div class="hamburger-btn outer-shadow hover-in-shadow">
+						<span></span>
+					</div>
+					<div id="tooltip" class="ham-tooltip tooltip outer-shadow">
+						<span>Click to Navigate!</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- navigation menu start -->
+	<nav class="nav-menu">
+			<!-- ----- Bouncing Animation ----- -->
+		<div class="animation-container">
+			<div class="bouncing-balls"></div>
+			<div class="bouncing-container">
+				<div class="bouncing-ball"></div>
+			</div>
+		</div>
+		<div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+		<div class="nav-menu-inner">
+			<ul>
+				<li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+				<li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
+				<li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
+				<li><a href="#projects" class="link-item outer-shadow hover-in-shadow">Projects</a></li>
+
+				<!-- Coming Soon Tooltip -->
+				<div id="tooltip-container" class="team-container tooltip-container">
+					<li><a target="_blank" href="html/error.html" class="link-item outer-shadow hover-in-shadow">Team</a></li>
+					<div id="tooltip" class="team-tooltip tooltip outer-shadow">
+						<span>Coming Soon...</span>
+					</div>
+				</div>
+
+				<li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Testimonial</a></li>
+				<li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+			</ul>
+		</div>
+
+		<!-- Copyright Tooltip Left -->
+		<!-- Override using tc-hide and tt-hide -->
+		<div id="tooltip-container" class="copyright-container tooltip-container">
+			<p class="copyright-text">&copy; 2023 Crusher</p>
+			<div id="tooltip" class="copyright-tooltip tooltip outer-shadow">
+				<span>Leave me alone..!!!</span>
+			</div>
+		</div>
+
+	</nav>
+	<div class="fade-out-effect"></div>
+	<!-- navigation menu end -->
+
+	<!-- Home Section Start -->
+	<section class="home-section section active" id="home">
+		<!-- effect wrap start -->
+		<div class="effect-wrap">
+			<!-- Square -->
+			<div class="effect effect-1"></div>
+			<!-- Dotted Rectangle -->
+			<div class="effect effect-2">
+				<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+			</div>
+			<!-- Doughnut -->
+			<div class="effect effect-3"></div>
+			<!-- Triangle -->
+			<div class="effect effect-4"></div>
+			<!-- Line Circle -->
+			<div class="effect effect-5">
+				<div></div><div></div><div></div><div></div><div></div>
+				<div></div><div></div><div></div><div></div><div></div>
+			</div>
+		</div>
+		<!-- effect wrap end -->
+		<div class="container">
+			<div class="row full-screen	align-items-center">
+				<div class="home-text">
+					<p>Hey there...</p>
+					<h2>I'm <span class="text-bg-animation">Hassaan</span></h2>
+					<h1>a Full Stack
+						<div class="rotate-words">
+							<span style="--d: 0s">developer.</span>
+							<span style="--d: 3s">designer.</span>
+						</div>
+					</h1>
+					<a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+				</div>
+				<div class="home-img">
+					<div class="img-box inner-shadow">
+						<img src="img/profile-pic.png" class="outer-shadow" alt="profile-pic">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Home Section End -->
+
+	<!-- About Section Start -->
+	<section class="about-section section" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<h2 data-heading="main info"><span class="text-bg-animation">About me</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="about-img">
+					<div class="img-box inner-shadow">
+						<img src="img/profile-pic.png" class="outer-shadow" alt="profile-pic">
+					</div>
+					<!-- Social links Start-->
+					<div class="social-links">
+						<a href="https://www.facebook.com/itxcrusher" target="_blank" class="outer-shadow hover-in-shadow icon facebook"><i class="fa-brands fa-facebook-f" id="facebook"></i></a>
+						<a href="https://www.twitter.com/itxcrusher" target="_blank" class="outer-shadow hover-in-shadow icon twitter"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+						<a href="https://www.instagram.com/itxcrusher" target="_blank" class="outer-shadow hover-in-shadow icon instagram"><i class="fa-brands fa-instagram" id="instagram"></i></a>
+						<a href="https://wa.me/+923027538580" target="_blank" class="outer-shadow hover-in-shadow icon whatsapp"><i class="fa-brands fa-whatsapp" id="whatsapp"></i></a>
+						<a href="https://www.linkedin.com/in/itxcrusher" target="_blank" class="outer-shadow hover-in-shadow icon linkedin"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a>
+						<a href="https://www.behance.net/itxcrusher" target="_blank" class="outer-shadow hover-in-shadow icon behance"><i class="fa-brands fa-behance" id="behance"></i></a>
+						<a href="https://www.discord.com/users/Crusher#0971" target="_blank" class="outer-shadow hover-in-shadow icon discord"><i class="fa-brands fa-discord" id="discord"></i></a>
+						<a href="https://t.me/itxcrusher" target="_blank" class="outer-shadow hover-in-shadow icon telegram"><i class="fa-brands fa-telegram" id="telegram"></i></a>
+					</div>
+				</div>
+				<div class="about-info">
+					<p><br>
+						<p class="type"><span>Assalam-o-Alaekum...</span></p>
+
+				        <p class="type"><span>My name is Muhammad Hassaan Javed.</span></p>
+
+				        <p class="type" id="type"><span>I am a Certified Full Stack Designer & Developer.</span></p>
+
+				        <!-- <p class="">Recognized by Clients and Supervisors for Superior performance. Proven expertise in Graphic Design, Web Design, UI, UX, Frontend and Backend Development. <br> I ensure that user interactions on web pages are intuitive and engaging. I also provide backend functionality that can run smoothly from any device or browser type commonly used today.</p> -->
+				        
+				    </p><br>
+					<a href="cv.pdf" target="_blank" class="btn-1 outer-shadow hover-in-shadow">My CV</a>
+					<a target="_blank" href="https://www.fiverr.com/itxcrusher" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+				</div>
+			</div>
+
+			<!-- About tab start -->
+			<div class="row">
+				<div class="about-tabs">
+					<span class="tab-item outer-shadow active" data-target=".skills">skills</span>
+					<span class="tab-item" data-target=".experience">experience</span>
+					<span class="tab-item" data-target=".education">education</span>
+				</div>
+			</div>
+			<!-- About tab end -->
+			
+			<!-- Skills Start -->
+			<div class="row">
+				<div class="skills tab-content active">
+					<div class="row">
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Adobe Photoshop</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Adobe Illustrator</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Adobe XD</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Figma</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Canva</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>HTML</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>CSS</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>JavaScript</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(80% - 14px)">
+									<span>80%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Jquery</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(70% - 14px)">
+									<span>70%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Bootstrap</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>SQL</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>C</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>C++</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>C#</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(90% - 14px)">
+									<span>90%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>.NET</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(80% - 14px)">
+									<span>80%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>OOP</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(100% - 14px)">
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Java</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(80% - 14px)">
+									<span>70%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+						<!-- Skill item start -->
+						<div class="skill-item">
+							<p>Php</p>
+							<div class="progress inner-shadow">
+								<div class="progress-bar" style="width: calc(70% - 14px)">
+									<span>70%</span>
+								</div>
+							</div>
+						</div>
+						<!-- Skill item end -->
+
+						<!-- Deep Bubble Animation -->
+						<div class='deep-bubbles-canvas'>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						  <div class='deep-bubble'></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- Skills End -->
+
+			<!-- Experience Start -->
+			<div class="row">
+				<div class="experience tab-content">
+					<div class="row">
+						<div class="timeline">
+							<div class="row">
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-briefcase icon"></i>
+										<span>Jan, 2022 - Present</span>
+										<h3>Full Stack Developer</h3>
+										<h4>Step Right - Skills Development Center (Licensed by: SECP)</h4>
+										<p>Main Paira Road, Near Jamia Anwar-e-Mustafa, Toba Tek Singh, Pakistan</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-briefcase icon"></i>
+										<span>Jan, 2022 - Present</span>
+										<h3>Full Stack Designer</h3>
+										<h4>Step Right - Skills Development Center (Licensed by: SECP)</h4>
+										<p>Main Paira Road, Near Jamia Anwar-e-Mustafa, Toba Tek Singh, Pakistan</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-briefcase icon"></i>
+										<span>Jan, 2022 - Present</span>
+										<h3>Graphic Designer</h3>
+										<h4>Step Right - Skills Development Center (Licensed by: SECP)</h4>
+										<p>Main Paira Road, Near Jamia Anwar-e-Mustafa, Toba Tek Singh, Pakistan</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-briefcase icon"></i>
+										<span>Jan, 2022 - Present</span>
+										<h3>Data Entry Operator</h3>
+										<h4>Step Right - Skills Development Center (Licensed by: SECP)</h4>
+										<p>Main Paira Road, Near Jamia Anwar-e-Mustafa, Toba Tek Singh, Pakistan</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- Deep Bubble Animation -->
+								<div class='deep-bubbles-canvas'>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Experience End -->
+
+			<!-- Education start -->
+			<div class="row">
+				<div class="education tab-content">
+					<div class="row">
+						<div class="timeline">
+							<div class="row">
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-graduation-cap icon"></i>
+										<span>2021 - 2022</span>
+										<h3>Full Stack Developer</h3>
+										<p>Skills Improvement Foundation (Licensed by: SECP)</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-graduation-cap icon"></i>
+										<span>2020 - 2021</span>
+										<h3>Full Stack Designer</h3>
+										<p>Skills Improvement Foundation (Licensed by: SECP)</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-graduation-cap icon"></i>
+										<span>2019 - 2020</span>
+										<h3>Graphic Designer</h3>
+										<p>Skills Improvement Foundation (Licensed by: SECP)</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-graduation-cap icon"></i>
+										<span>2018 - 2019</span>
+										<h3>IT Certificate</h3>
+										<p>Skills Improvement Foundation (Licensed by: SECP)</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- timeline item start -->
+								<div class="timeline-item">
+									<div class="timeline-item-inner outer-shadow">
+										<i class="fa fa-graduation-cap icon"></i>
+										<span>2019 - 2023</span>
+										<h3>Bachelor of Science in Physics</h3>
+										<p>GC University Faisalabad</p>
+									</div>
+								</div>
+								<!-- timeline item end -->
+								<!-- Deep Bubble Animation -->
+								<div class='deep-bubbles-canvas'>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								  <div class='deep-bubble'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Education end -->
+
+		</div>
+	</section>
+	<!-- About Section End -->
+
+	<!-- Services Section Start -->
+	<section class="service-section section " id="services">
+		<div class="container ">
+			<div class="row">
+				<div class="section-title">
+					<h2 data-heading="Services"><span class="text-bg-animation">What I Provide</span></h2>
+				</div>
+			</div>
+			<!-- Vanta Birds Animation -->
+			<div id="services-vanta-birds" class="row">
+				<!-- service item start -->
+				<div class="service-item">
+					<div class="service-item-inner outer-shadow">
+						<div class="icon inner-shadow">
+							<i class="fa fa-paintbrush"></i>
+							<!-- <i class="fa fa-pen-paintbrush"></i> -->
+						</div>
+						<h3>Web Design</h3>
+						<p>Explore UX/UI design strategies that drive conversations for businesses of all sizes. Create a better starting from research, wire framing and visual design, Chat Support Available.</p>
+					</div>
+				</div>
+				<!-- service item end -->
+				<!-- service item start -->
+				<div class="service-item">
+					<div class="service-item-inner outer-shadow">
+						<div class="icon inner-shadow">
+							<i class="fa fa-laptop"></i>
+						</div>
+						<h3>Web Development</h3>
+						<p>Put your business online and get more sales % leads with the quality and professional web experience in all facets of web development to help our clients reach their full digital potential.</p>
+					</div>
+				</div>
+				<!-- service item end -->
+				<!-- service item start -->
+				<div class="service-item">
+					<div class="service-item-inner outer-shadow">
+						<div class="icon inner-shadow">
+							<i class="fa fa-palette"></i>
+						</div>
+						<h3>Graphic Design</h3>
+						<p>The most well-planned business strategy would be ineffective without high-impact, quality graphic design. Great design is the key to a successful marketing strategy.</p>
+					</div>
+				</div>
+				<!-- service item end -->
+				<!-- service item start -->
+				<div class="service-item">
+					<div class="service-item-inner outer-shadow">
+						<div class="icon inner-shadow">
+							<i class="fa fa-code"></i>
+						</div>
+						<h3>Clean Code</h3>
+						<p>Clean code is a reader-focused development style that produces software that's easy to write, read and maintain. Often, you may be tempted to consider your work complete when the application operates as expected.</p>
+					</div>
+				</div>
+				<!-- service item end -->
+				<!-- service item start -->
+				<div class="service-item">
+					<div class="service-item-inner outer-shadow">
+						<div class="icon inner-shadow">
+							<i class="fa fa-mobile"></i>
+						</div>
+						<h3>Responsive Design</h3>
+						<p>Make your website respond to the user's behavior regardless of the screen size, platform, orientation and create great user experiences everywhere.</p>
+					</div>
+				</div>
+				<!-- service item end -->
+				<!-- service item start -->
+				<div class="service-item">
+					<div class="service-item-inner outer-shadow">
+						<div class="icon inner-shadow">
+							<i class="fa fa-keyboard"></i>
+						</div>
+						<h3>Data Entry</h3>
+						<p>Get your data compiled and verified with accuracy.This includes preparing documents for entry and transcribing from paper formats into computer files using manual entry or scanners.</p>
+					</div>
+				</div>
+				<!-- service item end -->
+			</div>
+		</div>
+	</section>
+	<!-- Services Section End -->
+
+	<!-- projects Section Start -->
+	<section class="projects-section section" id="projects">
+		<div class="container" id="projects-vanta-birds">
+			<div class="row">
+				<div class="section-title">
+					<h2 data-heading="projects"><span class="text-bg-animation">Latest Works</span></h2>
+				</div>
+			</div>
+			<!-- Projects Filter Start -->
+			<div class="row">
+				<div class="projects-filter">
+					<span class="filter-item outer-shadow active" data-target="all">all</span>
+					<span class="filter-item" data-target="web-development">web development</span>
+					<span class="filter-item" data-target="web-design">web design</span>
+					<span class="filter-item" data-target="app-design">app design</span>
+					<span class="filter-item" data-target="graphic-design">Graphic Design</span>
+				</div>
+			</div>
+			<!-- Projects Filter End -->
+
+			<!-- Projects Items Start -->
+			<div class="row projects-items">
+
+				<!-- Art Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Art.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Art/Eye Clock.jpeg, img/projects/large/Graphic Design/Art/Simple face illustration.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Art</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Art Projects end -->
+
+				<!-- Banner Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Banner.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Banner/Fashion Bill Board Banner.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Banner</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>TWD</span></li>
+										<li>Tools - <span>Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Banner Projects end -->
+
+				<!-- Bifold Brochure Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Bifold Brochure.png" alt="projects" data-screenshots="img/projects/large/Graphic Design/Bifold Brochure/Boxing Bifold Brochure.jpg, img/projects/large/Graphic Design/Bifold Brochure/Business Bifold Brochure.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Bifold Brochure</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Mutiple</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Bifold Brochure Projects end -->
+
+				<!-- Card Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Card.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Card/Business Card.jpeg, img/projects/large/Graphic Design/Card/Invitation and Envelope.jpg, img/projects/large/Graphic Design/Card/Personal Business Card.jpg, img/projects/large/Graphic Design/Card/Step Right Business Card.jpg, img/projects/large/Graphic Design/Card/Wedding Card Design.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Card</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Card Projects end -->
+
+				<!-- Flyer Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Flyer.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Flyer/Gym Flyer.jpeg, img/projects/large/Graphic Design/Flyer/Business Flyer.jpeg, img/projects/large/Graphic Design/Flyer/Ideas Flyer.jpeg, img/projects/large/Graphic Design/Flyer/Graphic Designing Flyer.jpg, img/projects/large/Graphic Design/Flyer/MS Office Flyer.jpg, img/projects/large/Graphic Design/Flyer/Web Development Flyer.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Flyer</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Flyer Projects end -->
+
+				<!-- Illustration Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Illustration.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Illustration/Girl Illustration.jpeg, img/projects/large/Graphic Design/Illustration/Turtle Illustration.jpeg, img/projects/large/Graphic Design/Illustration/Boy Illustration.jpeg, img/projects/large/Graphic Design/Illustration/Orange Girl Illustration.jpeg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Illustration</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Illustration Projects end -->
+
+				<!-- Label Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Label.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Label/Energy Drink Label.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Label Design</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>IED</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Label Projects end -->
+
+				<!-- Logo Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Logo.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Logo/Step Right Logo.jpg, img/projects/large/Graphic Design/Logo/Logo Mockup.jpg, img/projects/large/Graphic Design/Logo/Abstract Logo.jpg, img/projects/large/Graphic Design/Logo/Beyond Trekkers August Logo.png, img/projects/large/Graphic Design/Logo/Combination Logo.jpg, img/projects/large/Graphic Design/Logo/Emblem Logo.jpg, img/projects/large/Graphic Design/Logo/Letter Mark Logo.jpg, img/projects/large/Graphic Design/Logo/Mascot Logo.jpg, img/projects/large/Graphic Design/Logo/Pictorial Logo.jpg, img/projects/large/Graphic Design/Logo/Rise and Shine Logo.jpg, img/projects/large/Graphic Design/Logo/Wordmark Logo.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Logo</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020-2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Logo Projects end -->
+
+				<!-- Package Design Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Package Design.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Package Design/Box Package Design.jpg, img/projects/large/Graphic Design/Package Design/Coffee Package Design.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Package Design</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Package Design Projects end -->
+
+				<!-- Poster Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Poster.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Poster/Atlas 1.jpg, img/projects/large/Graphic Design/Poster/Medical Poster.jpg, img/projects/large/Graphic Design/Poster/Atlas 2.jpeg, img/projects/large/Graphic Design/Poster/Web Development Poster.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Poster</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2021-2022</span></li>
+										<li>Client - <span>Atlas News and Step Right</span></li>
+										<li>Tools - <span>Adobe Illustrator, Adobe Photoshop & Canva</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Poster Projects end -->
+
+				<!-- Social Media Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Social Media Post.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Social Media Post/Step Right 14 August Post.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Social Media</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>Step Right</span></li>
+										<li>Tools - <span>Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Social Media Projects end -->
+
+				<!-- T-Shirt Design Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/T-Shirt Design.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/T-Shirt Design/T-Shirt Design.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">T-Shirt Design</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2022</span></li>
+										<li>Client - <span>TWD</span></li>
+										<li>Tools - <span>Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- T-Shirt Design Projects end -->
+
+				<!-- Trifold Brochure Projects start -->
+				<div class="projects-item" data-category="graphic-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/Graphic Thumbnails/Trifold Brochure.jpg" alt="projects" data-screenshots="img/projects/large/Graphic Design/Trifold Brochure/Massage Trifold Brochure.jpg, img/projects/large/Graphic Design/Trifold Brochure/Funeral Trifold Brochure.jpg, img/projects/large/Graphic Design/Trifold Brochure/Wedding Agency Trifold Brochure.jpg">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Trifold Brochure</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2021-2022</span></li>
+										<li>Client - <span>Multiple</span></li>
+										<li>Tools - <span>Adobe Illustrator & Adobe Photoshop</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Trifold Brochure Projects end -->
+
+				<!-- Developer Portfolio Project start -->
+				<div class="projects-item" data-category="web-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-1.png" alt="projects" data-screenshots="img/projects/large/project-1/1.png,
+							img/projects/large/project-1/2.png,
+							img/projects/large/project-1/3.png,
+							img/projects/large/project-1/4.png,
+							img/projects/large/project-1/5.png,
+							img/projects/large/project-1/6.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Developer Portfolio</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>Upvesh Kumar</span></li>
+										<li>Tools - <span>HTML, CSS, JavScript</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Projects item details end -->
+					</div>
+				</div>
+				<!-- Developer Portfolio Project end -->
+
+				<!-- Wedding Couple Project start -->
+				<div class="projects-item" data-category="web-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-2.png" alt="projects" data-screenshots="img/projects/large/project-2/1.png,
+							img/projects/large/project-2/2.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Wedding Couple</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>Shashiv Upreti</span></li>
+										<li>Tools - <span>HTML, CSS, Jquery</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- projects item details end -->
+					</div>
+				</div>
+				<!-- Wedding Couple Project end -->
+
+				<!-- Product Landing Page Project start -->
+				<div class="projects-item" data-category="web-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-3.png" alt="projects" data-screenshots="img/projects/large/project-3/1.png,
+							img/projects/large/project-3/2.png,
+							img/projects/large/project-3/3.png,
+							img/projects/large/project-3/4.png,
+							img/projects/large/project-3/5.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Product Landing Page</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>Shala</span></li>
+										<li>Tools - <span>HTML, CSS, Bootstrap</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- projects item details end -->
+					</div>
+				</div>
+				<!-- Product Landing Page Project end -->
+
+				<!-- Photographer Portfolio Project start -->
+				<div class="projects-item" data-category="web-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-4.png" alt="projects" data-screenshots="img/projects/large/project-4/1.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Photographer Portfolio</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>Upvesh Kumar</span></li>
+										<li>Tools - <span>HTML, CSS, Jquery</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- projects item details end -->
+					</div>
+				</div>
+				<!-- Photographer Portfolio Project end -->
+
+				<!-- Fitness & Gym Project start -->
+				<div class="projects-item" data-category="web-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-5.png" alt="projects" data-screenshots="img/projects/large/project-5/1.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Fitness & Gym</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>Fitness Club</span></li>
+										<li>Tools - <span>HTML, CSS, Jquery</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- projects item details end -->
+					</div>
+				</div>
+				<!-- Fitness & Gym Project end -->
+
+				<!-- Quiz Application Project start -->
+				<div class="projects-item" data-category="app-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-6.png" alt="projects" data-screenshots="img/projects/large/project-6/1.png,
+							img/projects/large/project-6/2.png,
+							img/projects/large/project-6/3.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Quiz Application</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>John Doe</span></li>
+										<li>Tools - <span>HTML, CSS, JavaScript</span></li>
+										<li>Web - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- projects item details end -->
+					</div>
+				</div>
+				<!-- Quiz Application Project end -->
+
+				<!-- Share App Project start -->
+				<div class="projects-item" data-category="app-design">
+					<div class="projects-item-inner outer-shadow">
+						<div class="projects-item-img">
+							<img src="img/projects/thumb/project-7.png" alt="projects" data-screenshots="img/projects/large/project-7/1.png,
+							img/projects/large/project-7/2.png">
+
+							<!-- View project btn -->
+							<span class="view-project">View Project</span>
+						</div>
+						<p class="projects-item-title">Share App</p>
+						<!-- projects item details start -->
+						<div class="projects-item-details">
+							<div class="row">
+								<div class="description">
+									<h3>Project Brief:</h3>
+									<p>Coming Soon...</p>
+								</div>
+								<div class="info">
+									<h3>Project Info</h3>
+									<ul>
+										<li>Date - <span>2020</span></li>
+										<li>Client - <span>Oliver James</span></li>
+										<li>Tools - <span>Java, Android</span></li>
+										<li>Play Store - <span><a target="_blank" href="html/error.html">Coming Soon...</a></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- projects item details end -->
+					</div>
+				</div>
+				<!-- Share App Project end -->
+
+			</div>
+			<!-- projects Items End -->
+
+		</div>
+	</section>
+	<!-- projects Section end -->
+
+	<!-- Testimonial section start -->
+	<section class="testimonial-section section" id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<h2 data-heading="Testimonial"><span class="text-bg-animation">Client Speak</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="testi-box">
+					<div class="testi-slider outer-shadow">
+						<div class="testi-slider-container">
+							<!-- testi item start -->
+							<div class="testi-item active">
+								<i class="fa fa-quote-left left"></i>
+								<i class="fa fa-quote-right right"></i>
+								<p>His skills and knowledge is commendable, as is the flexibility and willingness to collaborate.</p>
+								<img src="img/testimonial/1.png" alt="testimonial">
+								<span>Oliver James</span>
+							</div>
+							<!-- testi item end -->
+							<!-- testi item start -->
+							<div class="testi-item">
+								<i class="fa fa-quote-left left"></i>
+								<i class="fa fa-quote-right right"></i>
+								<p>I was amazed by the level of expertise they bring to the table.</p>
+								<img src="img/testimonial/1.png" alt="testimonial">
+								<span>Jack Daniel</span>
+							</div>
+							<!-- testi item end -->
+							<!-- testi item start -->
+							<div class="testi-item">
+								<i class="fa fa-quote-left left"></i>
+								<i class="fa fa-quote-right right"></i>
+								<p>He was highly interested in our project and took into account all our comments and gave some good advice. He always responded quickly and provided detailed updates at every stage. The final result exceeded our expectations</p>
+								<img src="img/testimonial/1.png" alt="testimonial">
+								<span>John Doe</span>
+							</div>
+							<!-- testi item end -->
+							<!-- testi item start -->
+							<div class="testi-item">
+								<i class="fa fa-quote-left left"></i>
+								<i class="fa fa-quote-right right"></i>
+								<p>Work quality was very great. He is very approachable and available to answer any questions at any time.</p>
+								<img src="img/testimonial/1.png" alt="testimonial">
+								<span>Emily George</span>
+							</div>
+							<!-- testi item end -->
+						</div>
+					</div>
+					<div class="testi-slider-nav">
+						<span class="prev outer-shadow hover-in-shadow"><i class="fa fa-angle-left"></i></span>
+						<span class="next outer-shadow hover-in-shadow"><i class="fa fa-angle-right"></i></span>
+					</div>
+				</div>
+				<div class="testi-slider-nav"></div>
+			</div>
+		</div>
+
+		<!-- Fireworks Animation Start -->
+		<div class="pattern0 fireworks fire0"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern1 fireworks fire1"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern2 fireworks fire2"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern3 fireworks fire3"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern4 fireworks fire4"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern5 fireworks fire5"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern6 fireworks fire6"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern7 fireworks fire7"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern8 fireworks fire8"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern9 fireworks fire9"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern10 fireworks fire10"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern11 fireworks fire11"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern12 fireworks fire12"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern13 fireworks fire13"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern14 fireworks fire14"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern15 fireworks fire15"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern16 fireworks fire16"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern17 fireworks fire17"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern18 fireworks fire18"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<div class="pattern19 fireworks fire19"> 
+		  <div class="ring_1"></div>
+		  <div class="ring_2"></div>
+		</div>
+		<!-- Fireworks Animation End -->
+	</section>
+	<!-- Testimonial section end -->
+
+	<!-- contact section start -->
+	<section class="contact-section section" id="contact">
+		<div class="container" id="contact-vanta-birds">
+			<div class="row">
+				<div class="section-title">
+					<h2 data-heading="contact"><span class="text-bg-animation">Get In Touch</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- contact item start -->
+				<div class="contact-item">
+					<div class="contact-item-inner outer-shadow">
+						<a href="https://wa.me/+923011089580" target="_blank">
+							<i class="fas fa-sms"></i>
+							<span>Message</span>
+							<p>+92 3011089580</p>
+						</a>
+					</div>
+				</div>
+				<!-- contact item end -->
+				<!-- contact item start -->
+				<div class="contact-item">
+					<div class="contact-item-inner outer-shadow">
+						<a href="mailto:muhammadhassaanjaved99@gmail.com" target="_blank">
+							<i class="fa fa-envelope"></i>
+							<span>Email</span>
+							<p>muhammadhassaanjaved99@gmail.com</p>
+						</a>
+					</div>
+				</div>
+				<!-- contact item end -->
+				<!-- contact item start -->
+				<div class="contact-item">
+					<div class="contact-item-inner outer-shadow">
+						<a href="https://maps.app.goo.gl/F8uCWgDLrei4c5aS9" target="_blank">
+							<i class="fa fa-map-location-dot"></i>
+							<span>Address</span>
+							<p>Lahore, Pakistan</p>
+						</a>
+					</div>
+				</div>
+				<!-- contact item end -->
+			</div>
+			<div class="row">
+
+				<!-- Contact Form Start -->
+				<div class="contact-form">
+					<form id="contact-form" action="" method="post" onsubmit="" autocomplete="on">
+						<div class="row">
+							<div class="w-50">
+								<div class="input-group outer-shadow hover-in-shadow">
+									<input type="text" name="contact_name" id="contact_name" placeholder="Name" class="input-control" minlength="2" maxlength="50" required>
+								</div>
+								<div class="input-group outer-shadow hover-in-shadow">
+									<input type="email" name="contact_email" id="contact_email" placeholder="Email" class="input-control" minlength="6" maxlength="50" required>
+								</div>
+								<div class="input-group outer-shadow hover-in-shadow">
+									<input type="text" name="contact_subject" id="contact_subject" placeholder="Subject" class="input-control" maxlength="50" autocomplete="off">
+								</div>
+							</div>
+							<div class="w-50">
+								<div class="input-group outer-shadow hover-in-shadow">
+									<textarea name="contact_message" id="contact_message" class="input-control" placeholder="Message" maxlength="500" autocomplete="off"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="submit-btn">
+								<button id="submit-btn" type="submit" name="save" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Contact Form End -->
+
+			</div>
+		</div>
+	</section>
+	<!-- contact section end -->
+
+	<!-- projects Popup Start -->
+	<div class="pp projects-popup scroll-bar" id="projects-popup-vanta-birds">
+		<div class="pp-details">
+			<div class="pp-details-inner">
+				<div class="pp-title">
+					<h2></h2>
+					<p>Category - <span class="pp-project-category"></span></p>
+				</div>
+				<div class="pp-project-details">
+					<!-- Details Removed Here Start-->
+				</div>
+			</div>
+		</div>
+
+		<div class="separator"></div>
+
+		<div class="pp-main">
+			<div class="pp-main-inner">
+				<div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i class="fa fa-plus"></i></div>
+				<div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+				<img src="img/projects/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
+				<div class="pp-counter"></div>
+				<!-- Details Removed Here End-->
+			</div>
+			<div class="pp-loader">
+				<div></div>
+			</div>
+			<!-- pp navigation -->
+			<div class="pp-prev"><i class="fa fa-play"></i></div>
+			<div class="pp-next"><i class="fa fa-play"></i></div>
+		</div>
+	</div>
+	<!-- projects Popup End -->
+
+	<!-- style switcher start -->
+	<div class="style-switcher outer-shadow">
+		<div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+			<i onmouseover="styleTipReveal()" onmouseleave="styleTipHide()" class="fa fa-cog fa-spin"></i>
+		</div>
+		<div class="day-night s-icon outer-shadow hover-in-shadow">
+			<i onmouseover="modeTipReveal()" onmouseleave="modeTipHide()" class="fa "></i>
+		</div>
+		<h4>Theme Colors</h4>
+		<div class="colors">
+			<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+			<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+			<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+			<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+			<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+		</div>
+		<br>
+		<h4>Background Music</h4>
+		<div class="player">
+			<div id="control-panel" class="control-panel">
+				<div class="album-art"></div>
+				<div class="controls">
+					<div id="play" class="play">
+						<audio id="music" loop controls>
+							<source src="audio/bg-music.mpeg" type="audio/mpeg">
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- style switcher end -->
+
+	<!-- Tooltips Activator Start -->
+	<div class="activator-container tooltip-container">
+		<div class="tooltip-wrapper">
+			<input checked onclick="toggleTips()" id="toggle-tool-tips" type="checkbox"/>
+			<div class="tooltip-btn"></div>
+			<div class="tooltip-activator"><p>Tips Activated</p></div>
+			<svg style="pointer-events: none;">
+			<use xlink:href="#shape-01" class="shape shape-01" />
+			<use xlink:href="#shape-02" class="shape shape-02" />
+			<use xlink:href="#shape-03" class="shape shape-03" />
+			<use xlink:href="#shape-04" class="shape shape-04" />
+			<use xlink:href="#shape-05" class="shape shape-05" />
+			<use xlink:href="#shape-06" class="shape shape-06" />
+			<use xlink:href="#shape-07" class="shape shape-07" />
+			<use xlink:href="#shape-08" class="shape shape-08" />
+			<use xlink:href="#shape-09" class="shape shape-09" />
+			</svg>
+		</div>
+		<div class="activator-tooltips tooltip outer-shadow">
+			<span>Deactivate Tips</span>
+		</div>
+	</div>
+
+		<!-- SVG -->
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 22" id="icon-01">
+			<path d="M18.29,5.76l-.7-1.37A2.59,2.59,0,0,0,15.29,3H10.71a2.59,2.59,0,0,0-2.3,1.39l-.7,1.37a2.6,2.6,0,0,1-2.3,1.39H3.58A2.57,2.57,0,0,0,1,9.71V20.44A2.57,2.57,0,0,0,3.58,23H22.42A2.57,2.57,0,0,0,25,20.44V9.71a2.57,2.57,0,0,0-2.58-2.56H20.59A2.6,2.6,0,0,1,18.29,5.76Z" transform="translate(0 -2)"/>
+			<ellipse cx="13" cy="12.99" rx="4.52" ry="4.49"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 22" id="icon-02">
+			<line x1="25" y1="12.58" x2="25" y2="9.42"/>
+			<line x1="21" y1="14.16" x2="21" y2="7.84"/>
+			<line x1="17" y1="15.74" x2="17" y2="6.26"/>
+			<line x1="13" y1="21" x2="13" y2="1"/>
+			<line x1="9" y1="17.32" x2="9" y2="4.68"/>
+			<line x1="5" y1="13.63" x2="5" y2="8.37"/>
+			<line x1="1" y1="11.53" x2="1" y2="10.47"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 22" id="icon-03">
+			<polygon points="8.08 10 1 21 25 21 18.09 12.66 13.78 17.45 8.08 10"/>
+			<circle cx="8" cy="4" r="3"/>
+			</symbol>
+			
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-01">
+			<polygon stroke="var(--shape-color-03)" points="155.77 140.06 141.08 152.42 159.12 158.96 155.77 140.06"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-02">
+			<g stroke="var(--shape-color-02)">
+				<line x1="158.66" y1="146.73" x2="141.54" y2="152.29"/>
+				<line x1="147.32" y1="140.95" x2="152.88" y2="158.07"/>
+			</g>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-03">
+			<circle stroke="var(--shape-color-01)" cx="150.1" cy="149.51" r="13"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-04">
+			<circle fill="var(--shape-color-01)" cx="150.1" cy="149.51" r="4"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-05">
+			<rect stroke="var(--shape-color-03)" x="141.1" y="140.51" width="18" height="18" transform="translate(40.44 -31.76) rotate(13.94)"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-06">
+			<g stroke="var(--shape-color-02)">
+				<line x1="158.48" y1="152.78" x2="141.72" y2="146.24"/>
+				<line x1="153.37" y1="141.13" x2="146.83" y2="157.89"/>
+			</g>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-07">
+			<rect stroke="var(--shape-color-03)" x="138.1" y="137.51" width="24" height="24" transform="translate(-42.94 62.23) rotate(-20.56)"/>
+			</symbol>
+
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-08">
+			<circle fill="var(--shape-color-01)" cx="150.1" cy="149.51" r="4"/>
+			</symbol>
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" id="shape-09">
+			<circle stroke="var(--shape-color-01)" cx="150.1" cy="149.51" r="8"/>
+			</symbol>
+		</svg>
+
+	<!-- Tooltips Activator End -->
+
+	<!-- Fixed Tooltips Start -->
+	<div class="fixed-tooltips">
+		<div class="style-tooltip tooltip outer-shadow">
+			<span>Change Style...</span>
+		</div>
+		<div class="mode-tooltip tooltip outer-shadow">
+			<span>Light/Dark Mode</span>
+		</div>
+	</div>
+	<!-- Fixed Tooltips End -->
+
+	<!-- Light Modal Popup on Load Start -->
+	<div class="light-modal" id="onload-popup" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+
+        <div class="light-modal-content animate__animated animate__tada outer-shadow">
+
+            <a href="#onload-popup" class="popup-light-modal-btn"></a>
+
+            <!-- light modal header -->
+            <div class="light-modal-header">
+                <h1 class="light-modal-heading text-bg-animation">Hello and Welcome to my Portfolio</h1>
+                <span class="wave">👋</span>
+            </div>
+
+            <!-- light modal body -->
+            <div class="light-modal-body scroll-bar">
+                <div class="website-features">
+                    <h2>Website Features</h2><br>
+                    <ul>
+                        <li>&nbsp Background Music</li>
+                        <li>&nbsp Multiple Theme Colors</li>
+                        <li>&nbsp Light/Dark mode switch</li>
+                        <li>&nbsp Tips for better experience</li>
+                        <li>&nbsp Neumorphic Design</li>
+                        <li>&nbsp Stretchable Glass Logo</li>
+                        <li>&nbsp Background animations</li>
+                        <li>&nbsp Custom shape animations</li>
+                        <li>&nbsp Full responsive structure</li>
+                        <li>&nbsp Custom Scrollbar</li>
+                        <li>&nbsp Contact and Support option</li>
+                        <li>&nbsp Custom Cursor</li>
+                        <li>&nbsp Cursor Tracker</li>
+                        <li>&nbsp Custom Scroll bar</li>
+                    </ul>
+                </div><br>
+                <div class="body-note">
+                    <div class="popup-note">Note:</div>
+                    <div class="popup-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Some features are still under development but you got plenty to explore! ...Have Fun...</div>
+                </div>
+            </div>
+
+            <!-- light modal footer -->
+            <div class="light-modal-footer">
+                <a href="#" class="light-modal-close-btn" aria-label="close" onclick="musicPlay()">Close</a>
+            </div>
+
+        </div>
+    </div>
+	<!-- Light Modal Popup on Load End -->
+
+	<!-- Submit Modal Popup Start -->
+	<div id="submit-modal" class="light-modal" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+
+        <div id="submit-modal-content" class="light-modal-content animate__animated animate__bounceInDown outer-shadow">
+
+            <a href="#submit-modal" id="submit-modal-btn"></a>
+
+            <!-- Submit modal header -->
+            <div id="submit-modal-header" class="light-modal-header">
+                <h1 style="color: rgb(33, 243, 105);" id="submit-modal-heading" class="light-modal-heading text-bg-animation">Message Sent Successfully!</h1>
+            </div>
+
+            <!-- Submit modal body -->
+            <div id="submit-modal-body" class="light-modal-body">
+
+				<lottie-player class="submit-animation" src="https://assets9.lottiefiles.com/packages/lf20_Xo5Ikn.json" background="transparent" speed="1" autoplay></lottie-player>
+
+            </div>
+
+            <!-- Submit modal footer -->
+            <div id="submit-modal-footer" class="light-modal-footer">
+                <a href="#" id="submit-modal-close-btn" class="light-modal-close-btn" aria-label="close">Close</a>
+            </div>
+
+        </div>
+    </div>
+	<!-- Submit Modal Popup End -->
+
+
+	<!-- main js -->
+	<script src="js/main.js"></script>
+	<!-- Extra JS -->
+	<script type="text/javascript" src="js/extra.js"></script>
+	<!-- style switcher js -->
+	<script src="js/style-switcher.js"></script>
+	<!-- Custom Cursor Js -->
+	<script type="text/javascript" src="dist/js/mouse.js"></script>
+	<!-- Lottie Files CDN Link -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<!-- Ajax Link -->
+	<script type="text/javascript" src="ajax.js"></script>
+	<!-- Vanta Birds Animation -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.19/vanta.birds.min.js"></script> -->
+	<!-- Vanta Net Animation -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.19/vanta.net.min.js"></script> -->
+	<!-- Vanta Dots Animation -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.19/vanta.dots.min.js"></script> -->
+	<!-- Vanta Js -->
+	<!-- <script type="text/javascript" src="js/vanta.js"></script> -->
+</body>
+</html>
